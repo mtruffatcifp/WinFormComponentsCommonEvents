@@ -50,5 +50,20 @@ namespace WinFormComponentsCommonEvents
         {
             messagesTextBox.Text += "List Box selected index has changed to " + listBox1.SelectedIndex + Environment.NewLine;
         }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            messagesTextBox.Text += "The textbox has got the focus." + Environment.NewLine;
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            messagesTextBox.Text += "The textbox has lost the focus." + Environment.NewLine;
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            messagesTextBox.Text += "The key " + e.KeyChar + " has been pressed and released." + Environment.NewLine;
+        }
     }
 }
