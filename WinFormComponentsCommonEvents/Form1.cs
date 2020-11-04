@@ -4,17 +4,41 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace WinFormComponentsCommonEvents
 {
-    public partial class Form1 : Form
+    public partial class mainForm : Form
     {
-        public Form1()
+        public mainForm()
         {
             InitializeComponent();
+        }
+
+        private void mainForm_Load(object sender, EventArgs e)
+        {
+            messagesTextBox.Text = "Main Form loaded." + Environment.NewLine;
+        }
+
+        private void mainForm_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                messagesTextBox.Text += "Left button of the mouse has been clicked over the form." + Environment.NewLine;
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                messagesTextBox.Text += "Right button of the mouse has been clicked over the form." + Environment.NewLine;
+            }
+        }
+
+        private void label1_DoubleClick(object sender, EventArgs e)
+        {
+            messagesTextBox.Text += "The label has been double clicked." + Environment.NewLine;
         }
     }
 }
