@@ -45,5 +45,10 @@ namespace WinFormComponentsCommonEvents
         {
             messagesTextBox.Text += "Numeric Up Down value changed to " + numericUpDown1.Value + Environment.NewLine;
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            messagesTextBox.Text += "List Box selected index has changed to " + listBox1.SelectedIndex + Environment.NewLine;
+        }
     }
 }
