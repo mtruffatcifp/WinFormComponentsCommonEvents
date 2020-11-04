@@ -102,12 +102,14 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WinFormComponentsCommonEvents.Properties.Resources.ESP_016895_1525_desktop;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 375);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 366);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(214, 122);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseEnter += new System.EventHandler(this.pictureBox1_MouseEnter);
+            this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
             // 
             // mainForm
             // 

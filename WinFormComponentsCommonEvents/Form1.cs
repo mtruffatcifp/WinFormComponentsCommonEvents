@@ -65,5 +65,15 @@ namespace WinFormComponentsCommonEvents
         {
             messagesTextBox.Text += "The key " + e.KeyChar + " has been pressed and released." + Environment.NewLine;
         }
+
+        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        {
+            messagesTextBox.Text += "The mouse pointer is inside the image." + Environment.NewLine;
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            messagesTextBox.Text += "The mouse pointer is outside the image." + Environment.NewLine;
+        }
     }
 }
