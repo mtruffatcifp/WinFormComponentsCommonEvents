@@ -40,5 +40,10 @@ namespace WinFormComponentsCommonEvents
         {
             messagesTextBox.Text += "The label has been double clicked." + Environment.NewLine;
         }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            messagesTextBox.Text += "Numeric Up Down value changed to " + numericUpDown1.Value + Environment.NewLine;
+        }
     }
 }
